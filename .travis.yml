@@ -2,8 +2,8 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t "ety001/httpsqs:test" .
+  - docker build -t "oddminng/httpsqs:test" .
   - docker images
 script:
-  - docker run -d -t -i ety001/httpsqs:test
+  - docker run -d -t -i oddminng/httpsqs:test
   - docker ps -a
